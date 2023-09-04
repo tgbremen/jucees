@@ -10,6 +10,8 @@ Trata-se de um robô para automatizar a coleta de informações na junta comerci
   
   MD JUCEES
 
+  CD JUCEES
+
  2) Faça o download dos arquivos para a pasta do jucees.
 
  3) Crie o ambiente virtual.
