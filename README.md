@@ -1,6 +1,7 @@
 # JUCEES
 
 Trata-se de um robô para automatizar a coleta de informações na junta comercial do estado do ES, tornando o processo de análise de informações menos custoso e manual. 
+
 OBS: O robô só funciona dentro da rede interna do órgão conveniado. A biblioteca selenium 4.11.2 ou superior é um requisito.
 
 # Instalação
