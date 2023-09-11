@@ -1,6 +1,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 
+#Pasta de Downloads
+jucees_download/
+jucees_resultado/
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
