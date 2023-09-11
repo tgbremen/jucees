@@ -152,7 +152,7 @@ class jucees:
         for alvo in alvos:
             alvo_num = self.cnpj_sem_mascara(alvo)
             alvo = alvo_num
-            print("Buscando o CPF: " + alvo)
+            print("Buscando o CNPJ: " + alvo)
             campo_cnpj.clear()
             campo_cnpj.send_keys(alvo)
             sleep(1)
@@ -360,7 +360,10 @@ class jucees:
                 driver.switch_to.window(janela_download)
                 driver.execute_script('window.close()')
                 driver.switch_to.window(janela_consulta)
-        
+
+        fim = datetime.now()
+        print("Hora de fim: " + str(fim.hour) + ":" + str(fim.minute) + ":" + str(fim.second)) 
+        print ("Concluído")
         driver.close()
     
 
