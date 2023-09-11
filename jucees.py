@@ -7,10 +7,10 @@ from PySimpleGUI.PySimpleGUI import Output
 instrucoes = """Instruções: \n
 1. Os CNPJs não são validados pelo programa. Se houver erro, não encontrará nada ou dará erro no programa. \n
 2. Os CNPJs podem ser escritos com ou sem pontos, hífens e barras. \n
-3. Os zeros iniciais não podem ser omitidos ou o CPF / CNPJ não será encontrado. \n
+3. Os zeros iniciais não podem ser omitidos ou o CNPJ não será encontrado. \n
 4. Após clicar no botão Iniciar Execução, pode demorar um pouco até que o driver do chrome seja atualizado. \n
 5. Não use ou feche a janela do chrome durante a execução do programa, apenas a minimize. Não abra outra aba nessa janela. \n
-6. Os arquivos ficarão dentro da pasta jucees_resultado, que estará localizada na mesma página deste arquivo.  \n
+6. Os arquivos ficarão dentro da pasta jucees_resultado, que estará localizada na mesma pasta deste arquivo.  \n
 """
 
 
@@ -44,7 +44,7 @@ class TelaPython:
                     #[sg.HSeparator()],
                     #[sg.Text("Nome da lista:")], [sg.Input(size=(25,1), key = 'nomedalista')],
                     #[sg.HSeparator()],
-                    [sg.Text("Lista de CPFs ou CNPJs:")],
+                    [sg.Text("Lista de CNPJs:")],
                     [sg.Multiline(size=(25,18), key = 'cpf_cnpj', expand_y = True, autoscroll = True), sg.Text(text = instrucoes)], 
                     [sg.Button('Iniciar Extração', key =  "Iniciar"), sg.Button('Pausar Extração', key = "Pause", visible = False), sg.Button('Parar Extração', key = 'Stop', visible = False, disabled = True)], 
                     [sg.Output(size=(150,20), key= "Output")]
@@ -58,7 +58,7 @@ class TelaPython:
         Output.expand_y = True
         #self.janela.read()
         print ('Scraper JUCEES')
-        print ("Desenvolvido no Núcleo de Inovação, Prospecção e Análise de Dados (CGU-ES/NAE/NIPAD)")
+        print ("Desenvolvido no Núcleo de Inovação, Prospecção e Análise de Dados (CGU-ES/NIPAD)")
         print ("Atualizações disponíveis em http://github.com/tgbremen/jucees")
         print ("-------------------------------------------------------------------------")
 
