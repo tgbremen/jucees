@@ -20,7 +20,7 @@ class TelaPython:
         sg.theme('DarkGrey1')
         
         layout_splash = [
-                        [sg.Image(r'd:\py\vilavelha.png', expand_y = True, expand_x = True)]
+                        [sg.Image(r'vilavelha.png', expand_y = True, expand_x = True)]
             
         ]
         
